@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".Prijava">
+
+    <TextView
+        android:id="@+id/generatenumber4"
+        android:layout_width="4dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="176dp"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_prijava"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_prijava"
+        app:layout_constraintTop_toBottomOf="@+id/button_prijava" />
+
+    <TextView
+        android:id="@+id/Prijava"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Prijava"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/generatenumber5"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_prijava"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_prijava" />
+
+    <EditText
+        android:id="@+id/UnesiteEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Vaš email"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/UnesiteVašuŠifru"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UnesiteVašuŠifru"
+        app:layout_constraintTop_toBottomOf="@+id/Prijava" />
+
+    <EditText
+        android:id="@+id/UnesiteVašuŠifru"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Korisničko ime"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UnesiteEmail" />
+
+    <TextView
+        android:id="@+id/ZaboravljenaSifra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Zaboravili ste sifru?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UnesiteVašuŠifru" />
+
+    <Button
+        android:id="@+id/button_prijava"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_bg"
+        android:text="PRIJAVA"
+        app:layout_constraintEnd_toEndOf="@+id/UnesiteVašuŠifru"
+        app:layout_constraintStart_toStartOf="@+id/UnesiteVašuŠifru"
+        app:layout_constraintTop_toBottomOf="@+id/ZaboravljenaSifra" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="273dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="88dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/button_prijava"
+        app:layout_constraintTop_toBottomOf="@+id/button_prijava">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nemate profil?" />
+
+        <TextView
+            android:id="@+id/prijavitese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Registrirajte se?"
+            android:textColor="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/btg_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="VRATI ME NA GENERATOR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="530dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

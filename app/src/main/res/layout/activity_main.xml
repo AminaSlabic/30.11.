@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/generatenumber8"
+        android:layout_width="4dp"
+        android:layout_height="91dp"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/generatenumber7"
+        android:layout_width="4dp"
+        android:layout_height="91dp"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DODIRNI ZA RANDOM BROJ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/generatenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:maxLines="1"
+        android:shadowColor="#151414"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generatenumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generiraj"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <Button
+        android:id="@+id/generiraj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="147dp"
+        android:layout_marginBottom="488dp"
+        android:background="@android:drawable/presence_invisible"
+        android:backgroundTint="#2E2A2A"
+        android:backgroundTintMode="screen"
+        android:drawablePadding="@dimen/cardview_compat_inset_shadow"
+        android:text="PRIJAVI SE"
+        app:iconPadding="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
