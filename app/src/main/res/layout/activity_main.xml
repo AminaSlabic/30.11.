@@ -9,24 +9,17 @@
 
 
     <TextView
-        android:id="@+id/generatenumber8"
-        android:layout_width="4dp"
-        android:layout_height="91dp"
-        android:maxLines="1"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
         android:id="@+id/generatenumber7"
         android:layout_width="4dp"
         android:layout_height="91dp"
         android:maxLines="1"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/prijavise"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/prijavise"
+        app:layout_constraintTop_toBottomOf="@+id/prijavise" />
 
     <Button
         android:id="@+id/generate"
@@ -53,37 +46,30 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/generatenumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:maxLines="1"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generiraj"
-        app:layout_constraintVertical_bias="0.479" />
-
     <Button
-        android:id="@+id/generiraj"
+        android:id="@+id/prijavise"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="147dp"
-        android:layout_marginBottom="488dp"
-        android:background="@android:drawable/presence_invisible"
-        android:backgroundTint="#2E2A2A"
-        android:backgroundTintMode="screen"
-        android:drawablePadding="@dimen/cardview_compat_inset_shadow"
-        android:text="PRIJAVI SE"
-        app:iconPadding="@dimen/cardview_default_radius"
+        android:background="#673AB7"
+        android:backgroundTint="#E91E63"
+        android:backgroundTintMode="multiply"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="#3F51B5"
+        android:text="prijava"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSelectHandle="@drawable/back"
+        android:textSelectHandleLeft="@drawable/background"
+        android:textSelectHandleRight="@drawable/button_bg"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generate" />
+        app:layout_constraintTop_toBottomOf="@+id/generate"
+        app:layout_constraintVertical_bias="0.75"
+        app:rippleColor="#9C27B0"
+        app:strokeColor="#FFFFFF" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 textGenerateNumber.setText(String.valueOf(myRandom.nextInt(10)));
 
 
-                Button buttonGenerate = (Button)findViewById(R.id.generiraj);
-                final TextView textGenerateNumber2 = (TextView)findViewById(R.id.generatenumber2);
+                Button buttonGenerate = (Button)findViewById(R.id.prijavise);
+                final TextView textGenerateNumber7 = (TextView)findViewById(R.id.generatenumber7);
                 buttonGenerate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
